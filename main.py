@@ -4,6 +4,11 @@ app=FastAPI()
 def home():
 	return {"messgae":"deployment"}
 
-@app.post("/gett")
-def  something(text):
-	return {"response":text.upper()}
+text=""
+
+@app.get("/text")
+def somethingelse(text):
+	return {"text":text.upper()}
+@app.post("/gettt")
+def something(text):
+	return somethingelse(text)
