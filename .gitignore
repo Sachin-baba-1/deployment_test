@@ -1,3 +1,4 @@
 fast/
 __pycache__/
 *.pyc
+app.log
